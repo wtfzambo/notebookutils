@@ -1,0 +1,7 @@
+[project]
+name = "notebookutils"
+version = "0.1.0"
+description = "A package that allows to use synapse mssparkutils without actual functionality. This helps to generate the build. Unofficial fork of https://pypi.org/project/dummy-notebookutils/"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
