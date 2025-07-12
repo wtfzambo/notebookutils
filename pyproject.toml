@@ -5,3 +5,17 @@ description = "A package that allows to use synapse mssparkutils without actual 
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
+
+[tool.pyright]
+include = ["notebookutils"]
+exclude = ["**/__pycache__"]
+
+reportUnusedParameter = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportExplicitAny = false
+reportCallInDefaultInitializer = false
+
+executionEnvironments = [
+    { root = "notebookutils/__init__.py", reportMissingParameterType=false, reportUnknownParameterType=false }
+]
