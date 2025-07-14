@@ -1,6 +1,6 @@
 [project]
 name = "dummy-notebookutils-reborn"
-version = "1.1.11"  # Mirror `notebookutils` actual version
+version = "1.1.11dev1"  # Mirror `notebookutils` actual version
 description = "A package that allows to use synapse mssparkutils without actual functionality. This helps to generate the build. Unofficial fork of dummy-notebookutils."
 readme = "README.md"
 requires-python = ">=3.10"

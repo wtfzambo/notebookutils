@@ -2,16 +2,22 @@ version: 3
 
 dotenv: [.env]
 
+vars:
+  PACKAGE: notebookutils
+
 tasks:
+  default:
+    silent: true
+    cmd: task -a
+
+  build:
+    cmds:
+      - rm -rf ./dist
+      - uv build
 
   publish:
-    cmd: echo
-
-  publish_test:
-    cmd: uv publish --token $TEST_PYPI_TOKEN --publish-url https://test.pypi.org/legacy/
+    cmd: uv publish --token $PYPI_TOKEN
 
   verify_installation:
     cmd: >
-      uv run --with dummy-notebookutils-reborn
-      --index-url https://test.pypi.org/simple/ --no-project
-      -- python -c "import notebookutils"
+      uv run --with dummy-notebookutils-reborn --no-project -- python -c "import {{.PACKAGE}}"
