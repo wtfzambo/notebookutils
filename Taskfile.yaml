@@ -20,4 +20,5 @@ tasks:
 
   verify_installation:
     cmd: >
-      uv run --with dummy-notebookutils-reborn --no-project -- python -c "import {{.PACKAGE}}"
+      uv run --with dummy-notebookutils-reborn --no-project --
+      python -c "import {{.PACKAGE}}; print({{.PACKAGE}}.__version__)"
