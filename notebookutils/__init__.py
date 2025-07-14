@@ -16,21 +16,26 @@ __all__ = [
     "notebook",
     "session",
     "runtime",
-    "fabricClient",
     "credentials",
     "udf",
+    "session",
+    "variableLibrary",
+    "warehouse",
+    "workspace",
 ]
 
 from . import (
     credentials,
     data,
-    fabricClient,
     fs,
     lakehouse,
     notebook,
     runtime,
     session,
     udf,
+    variableLibrary,
+    warehouse,
+    workspace,
 )
 
 

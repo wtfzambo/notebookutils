@@ -3,5 +3,15 @@ version: 3
 dotenv: [.env]
 
 tasks:
-  do_stuff:
-    cmd: echo $TEST_PYPI_TOKEN
+
+  publish:
+    cmd: echo
+
+  publish_test:
+    cmd: uv publish --token $TEST_PYPI_TOKEN --publish-url https://test.pypi.org/legacy/
+
+  verify_installation:
+    cmd: >
+      uv run --with dummy-notebookutils-reborn
+      --index-url https://test.pypi.org/simple/ --no-project
+      -- python -c "import notebookutils"
