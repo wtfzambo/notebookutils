@@ -9,7 +9,7 @@ The original package disappeared from GitHub and so I had no change to create PR
 Install `dummy_notebookutils`
 
 ```sh
-pip install <placeholder>
+pip install dummy-notebookutils-reborn
 ```
 
 ## Usage

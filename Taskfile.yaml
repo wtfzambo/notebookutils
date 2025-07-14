@@ -1,0 +1,7 @@
+version: 3
+
+dotenv: [.env]
+
+tasks:
+  do_stuff:
+    cmd: echo $TEST_PYPI_TOKEN
