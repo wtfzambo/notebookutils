@@ -3,7 +3,7 @@ This module provides various utilities for users to interact with the rest of Sy
 fs: Utility for filesystem operations in Synapse
 notebook: Utility for notebook operations (e.g, chaining Synapse notebooks together)
 credentials: Utility for obtaining credentials (tokens and keys) for Synapse resources
-env: Utility for obtaining environment metadata (e.g, userName, clusterId etc)
+
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2152237)
 """
 
