@@ -19,8 +19,6 @@ mounts(): Array[MountPointInfo] -> Show information about what is mounted
 getMountPath(mountPoint: String, scope: String = ""): String -> Gets the local path of the mount point
 
 Use mssparkutils.fs.help("methodName") for more info about a method.
-
-[Learn more](https://go.microsoft.com/fwlink/?linkid=2152237)
 """
 
 from typing import Any
