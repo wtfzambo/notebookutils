@@ -151,7 +151,7 @@ def create(
     defaultLakehouse: str = "",
     defaultLakehouseWorkspace: str = "",
     workspaceId: str = "",
-):
+) -> Any:
     """Create a new Notebook.
 
     Args:
@@ -188,7 +188,7 @@ def delete(name: str, workspaceId: str = "") -> bool:
     return False
 
 
-def list(workspaceId: str = "", maxResults: int = 1000):
+def list(workspaceId: str = "", maxResults: int = 1000) -> list[Any]:
     """List all Notebooks.
 
     Args:
@@ -198,10 +198,10 @@ def list(workspaceId: str = "", maxResults: int = 1000):
     Returns:
         Array[Artifact]: Array of Artifact objects.
     """
-    pass
+    return []
 
 
-def get(name: str, workspaceId: str = ""):
+def get(name: str, workspaceId: str = "") -> Any:
     """Get the info of a Notebook.
 
     Args:
@@ -214,7 +214,9 @@ def get(name: str, workspaceId: str = ""):
     pass
 
 
-def update(name: str, newName: str, description: str = "", workspaceId: str = ""):
+def update(
+    name: str, newName: str, description: str = "", workspaceId: str = ""
+) -> Any:
     """
     Update the info of a Notebook.
 

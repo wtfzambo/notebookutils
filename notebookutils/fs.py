@@ -189,7 +189,7 @@ def unmountFromDriverNode(mountPoint):
     return False
 
 
-def mount(source: str, mountPoint: str, extraConfigs: dict[str, Any] = {}):
+def mount(source: str, mountPoint: str, extraConfigs: dict[str, Any] = {}) -> bool:
     """Mounts the given remote storage directory at the given mount point.
 
     Examples::
